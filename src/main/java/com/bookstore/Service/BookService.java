@@ -20,4 +20,11 @@ public class BookService {
         return bookRepository.findAll();
     }
 
+    public Book getBookId(Integer id){
+        return bookRepository.findById(id).get();
+    }
+    public void deleteById(int id){
+        bookRepository.deleteById(id);
+    }
+
 }
